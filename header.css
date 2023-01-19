@@ -1,0 +1,47 @@
+.header {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.8rem;
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.header .header__logo {
+  font-size: 2.5rem;
+  color: rgb(237, 99, 54);
+}
+
+.header__menu .menu__container {
+}
+.header__menu input {
+  display: none;
+}
+.header__menu input:checked ~ .menu__container {
+  display: block;
+}
+.header__menu label {
+  display: block;
+  height: 2rem;
+  margin-right: 0.4rem;
+}
+.header__menu label > i {
+  font-size: 2rem;
+}
+
+.menu__container {
+  display: none;
+}
+.menu__list li ul {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+}
+.menu__list li:hover ul {
+  display: block;
+}
