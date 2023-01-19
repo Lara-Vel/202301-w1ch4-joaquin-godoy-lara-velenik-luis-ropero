@@ -1,0 +1,21 @@
+.home__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+}
+.home__title h1 {
+  color: #ed6436;
+  text-transform: uppercase;
+}
+.home__title h2 {
+  font-weight: bolder;
+}
+.title__button {
+  background-color: #ed6436;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 0 35% 35% 35%;
+  border: 0;
+  padding: 5%;
+}
