@@ -1,0 +1,32 @@
+.home__images {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+
+.images__pet {
+  position: relative;
+}
+.images__pet .pet__images {
+  max-width: 80%;
+  height: auto;
+  opacity: 0.88;
+  border-radius: 1rem;
+}
+
+.images__pet .pet__text {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  color: white;
+}
+
+.images__pet .pet__text span {
+  display: block;
+  font-size: 0.6rem;
+}
