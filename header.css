@@ -12,36 +12,97 @@ ol {
   list-style: none;
 }
 
+a span {
+  font-size: 0.6rem;
+}
+
 .header .header__logo {
   font-size: 2.5rem;
   color: rgb(237, 99, 54);
 }
 
-.header__menu .menu__container {
-}
 .header__menu input {
   display: none;
 }
+
 .header__menu input:checked ~ .menu__container {
-  display: block;
+  right: 0;
 }
+
 .header__menu label {
   display: block;
   height: 2rem;
   margin-right: 0.4rem;
 }
+
 .header__menu label > i {
   font-size: 2rem;
 }
 
-.menu__container {
-  display: none;
+.header__menu .menu__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  z-index: -1;
+  right: -100%;
+  top: 8vh;
+  min-width: 80%;
+  height: 100vh;
+  background-color: #333;
+  padding: 1rem 0.5rem 0 1rem;
+  transition: all 0.5s ease;
 }
-.menu__list li ul {
+
+.header__menu .menu__container .menu__list li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.header__menu .menu__container .menu__list li a.list__item--last {
+  margin: 0;
+  padding: 0.5rem;
+  border: 5px solid rgb(237, 99, 54);
+  border-radius: 0px 40px 40px 40px;
+}
+
+.header__menu .menu__container .menu__list li a.list__item--last:hover {
+  color: white;
+  background-color: rgb(237, 99, 54);
+  transition: all 0.15s ease;
+}
+
+.header__menu .menu__container .menu__list li ul {
   display: none;
-  position: absolute;
   min-width: 200px;
+  margin-left: 1.5rem;
 }
-.menu__list li:hover ul {
+
+.header__menu .menu__container .menu__list li:hover ul {
   display: block;
+}
+
+.header__menu .menu__container .menu__list li ul li a {
+  margin: 0.3rem 0;
+}
+
+.header__menu .menu__container .menu__list li ul li:last-child a {
+  margin-bottom: 1.3rem;
+}
+
+.header__menu .menu__container .menu__list a:hover {
+  color: rgb(237, 99, 54);
+  border-bottom: 3px solid rgb(237, 99, 54);
+}
+
+/* ---------- Media Querie ---------- */
+
+@media screen and (min-width: 1440px) {
+  .header__menu input,
+  .header__menu label {
+    display: none;
+  }
 }
