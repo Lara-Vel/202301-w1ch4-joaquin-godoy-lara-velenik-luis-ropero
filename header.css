@@ -24,7 +24,7 @@ a span {
   display: none;
 }
 .header__menu input:checked ~ .menu__container {
-  right: 0;
+  left: 0;
 }
 .header__menu label {
   display: block;
@@ -40,8 +40,8 @@ a span {
   align-items: flex-start;
   justify-content: flex-start;
   position: fixed;
-  right: -100%;
-  top: 8vh;
+  left: -100%;
+  top: 0;
   width: 80%;
   height: 100vh;
   background-color: #333;
@@ -114,7 +114,7 @@ a span {
     height: 12vh;
     width: 80%;
     position: absolute;
-    right: 0;
+    left: 280px;
     top: 0;
     display: flex;
     justify-content: end;
@@ -133,7 +133,7 @@ a span {
     font-size: 2rem;
   }
   .header__menu .menu__container .menu__list li a.list__item--last {
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 0px 100px 100px 100px;
   }
   .header__menu .menu__container .menu__list li ul {
